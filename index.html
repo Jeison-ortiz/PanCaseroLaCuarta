@@ -4,51 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pan Casero La 4TA</title>
+
     <style>
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: url('fondo.jpg') no-repeat center center fixed;
+            background: url('fondo.png') no-repeat center center fixed;
             background-size: cover;
-            color: white;
+            color: #fff;
             text-align: center;
-            padding: 40px;
+            padding: 30px;
         }
 
+        /* Capa oscura para que el texto se lea bien */
         .overlay {
             background: rgba(0, 0, 0, 0.55);
-            padding: 40px;
+            padding: 40px 25px;
             border-radius: 20px;
             max-width: 600px;
             margin: auto;
         }
 
         .logo {
-            width: 160px;
-            margin-bottom: 20px;
+            width: 170px;
+            margin-bottom: 15px;
         }
 
         h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
+            font-size: 34px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .sub {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 35px;
         }
 
         .menu-item {
-            background: rgba(255, 255, 255, 0.12);
-            padding: 15px 20px;
-            border-radius: 12px;
-            margin: 10px auto;
-            max-width: 320px;
+            background-color: rgba(255, 255, 255, 0.88);
+            color: #3a2a1a;
+            padding: 16px 20px;
+            margin: 12px auto;
+            max-width: 380px;
             font-size: 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+        }
+
+        .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.95);
+            cursor: pointer;
         }
     </style>
 </head>
+
 <body>
 
     <div class="overlay">
-        <img src="logo.png" class="logo" alt="Logo Pan Casero La 4TA">
+        <img src="fondo.png" class="logo" alt="Logo Pan Casero La 4TA">
+
         <h1>Pan Casero La 4TA</h1>
-        <p>@pancaserola4ta_</p>
+        <p class="sub">@pancaserola4ta_</p>
 
         <div class="menu">
             <div class="menu-item">Tortas y Pasteles</div>
