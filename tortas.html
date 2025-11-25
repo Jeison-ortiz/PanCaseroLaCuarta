@@ -69,6 +69,28 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.4);
             object-fit: contain;
         }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            background: #ffffffdd;
+            color: #4b0f0f;
+            padding: 12px 22px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.35);
+            transition: 0.25s ease;
+        }
+
+        .back-btn:hover {
+            background: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.45);
+        }
+
+
     </style>
 </head>
 
@@ -89,7 +111,7 @@
             <div class="menu-item">Tortas frias</div>
             <div class="menu-item">Tortas con glasé real</div>
 
-            <a href="index.html">⬅️ Volver al menú</a>
+            <a href="index.html" class="back-btn">⬅️ Volver al menú</a>
         </div>
 
     </div>
