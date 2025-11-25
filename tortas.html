@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tortas y Pasteles - La 4TA</title>
 
-    <style>
+<style>
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: url('fondo.png') no-repeat center center fixed;
-            background-size: cover;
+            background: linear-gradient(180deg, #4b0f0f, #7a1a1a);
+            background-attachment: fixed;
             color: #fff;
             text-align: center;
             padding: 30px;
@@ -20,35 +20,54 @@
             background: rgba(0, 0, 0, 0.55);
             padding: 40px 25px;
             border-radius: 20px;
-            max-width: 600px;
+            max-width: 650px;
             margin: auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         }
 
         .logo {
-            width: 150px;
+            width: 180px;
             margin-bottom: 15px;
         }
 
         h1 {
-            font-size: 30px;
-            margin-bottom: 10px;
+            font-size: 36px;
+            margin-bottom: 5px;
+            font-weight: 700;
         }
 
-        .item {
+        .sub {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 35px;
+        }
+
+        .menu-item {
             background-color: rgba(255, 255, 255, 0.88);
             color: #3a2a1a;
-            padding: 15px;
+            padding: 16px 20px;
             margin: 12px auto;
-            max-width: 350px;
-            border-radius: 20px;
-            font-size: 18px;
+            max-width: 380px;
+            font-size: 20px;
+            border-radius: 40px;
             font-weight: 600;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.4);
         }
 
-        a {
-            color: #ffd28c;
-            font-size: 18px;
-            font-weight: bold;
+        .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.95);
+            cursor: pointer;
+        }
+
+        .logo-circle {
+            width: 190px;
+            height: 190px;
+            border-radius: 40%;
+            background: rgba(255,255,255,0.88);
+            padding: 20px;
+            border: 2px solid #7a1a1a; /* Vinotinto */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            object-fit: contain;
         }
     </style>
 </head>
@@ -56,18 +75,23 @@
 <body>
 
     <div class="overlay">
-        <img src="logo.png" class="logo" alt="Logo La 4TA">
-        <h1>Tortas y Pasteles</h1>
 
-        <div class="item">Torta de Mily</div>
-        <div class="item">Torta de harry</div>
-        <div class="item">Torta katia</div>
-        <div class="item">Tortas frías</div>
-        <div class="item">Tortas personalizadas</div>
+        <!-- Usa aquí tu logo PNG -->
+        <img src="logo.png" class="logo-circle" alt="Logo Pan Casero La 4TA">
 
-        <br><br>
+        <h1>Pan Casero La 4TA</h1>
+        <p class="sub">@pancaserola4ta_</p>
 
-        <a href="index.html">⬅️ Volver al menú</a>
+        <div class="menu">
+            <a href="tortas.html" style="text-decoration:none;">
+                <div class="menu-item">Tortas personalizadas</div>
+            </a>
+            <div class="menu-item">Tortas frias</div>
+            <div class="menu-item">Tortas con glasé real</div>
+
+            <a href="index.html">⬅️ Volver al menú</a>
+        </div>
+
     </div>
 
 </body>
