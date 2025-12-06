@@ -3,118 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galletas</title>
+    <title>Galletas para toda ocasión</title>
 
 <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(180deg, #4b0f0f, #7a1a1a);
-            background-attachment: fixed;
-            color: #fff;
-            text-align: center;
-            padding: 30px;
-        }
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(180deg, #4b0f0f, #7a1a1a);
+        background-attachment: fixed;
+        color: #fff;
+        padding: 25px;
+        text-align: center;
+    }
 
-        .overlay {
-            background: rgba(0, 0, 0, 0.55);
-            padding: 40px 25px;
-            border-radius: 20px;
-            max-width: 650px;
-            margin: auto;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-        }
+    .logo-circle {
+        width: 170px;
+        height: 170px;
+        border-radius: 40%;
+        background: rgba(255,255,255,0.85);
+        padding: 20px;
+        border: 2px solid #7a1a1a;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
 
-        .logo {
-            width: 180px;
-            margin-bottom: 15px;
-        }
+    h1 {
+        font-size: 32px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
 
-        h1 {
-            font-size: 36px;
-            margin-bottom: 5px;
-            font-weight: 700;
-        }
+    .sub {
+        font-size: 18px;
+        opacity: 0.9;
+        margin-bottom: 30px;
+    }
 
-        .sub {
-            font-size: 18px;
-            opacity: 0.9;
-            margin-bottom: 35px;
-        }
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding-bottom: 40px;
+    }
 
-        .menu-item {
-            background-color: rgba(255, 255, 255, 0.88);
-            color: #3a2a1a;
-            padding: 16px 20px;
-            margin: 12px auto;
-            max-width: 380px;
-            font-size: 20px;
-            border-radius: 40px;
-            font-weight: 600;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.4);
-        }
+    .card {
+        background: rgba(255,255,255,0.92);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+        transition: 0.3s;
+    }
 
-        .menu-item:hover {
-            background-color: rgba(255, 255, 255, 0.95);
-            cursor: pointer;
-        }
+    .card:hover {
+        transform: scale(1.015);
+    }
 
-        .logo-circle {
-            width: 190px;
-            height: 190px;
-            border-radius: 40%;
-            background: rgba(255,255,255,0.88);
-            padding: 20px;
-            border: 2px solid #7a1a1a; /* Vinotinto */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-            object-fit: contain;
-        }
+    .card img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
 
-        .back-btn {
-            display: inline-block;
-            margin-top: 25px;
-            background: #ffffffdd;
-            color: #4b0f0f;
-            padding: 12px 22px;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 30px;
-            text-decoration: none;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.35);
-            transition: 0.25s ease;
-        }
+    .card-title {
+        font-size: 20px;
+        color: #4b0f0f;
+        font-weight: bold;
+        padding: 12px;
+    }
 
-        .back-btn:hover {
-            background: #ffffff;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 14px rgba(0,0,0,0.45);
-        }
+    .back-btn {
+        display: inline-block;
+        margin-top: 30px;
+        background: #ffffffdd;
+        color: #4b0f0f;
+        padding: 12px 22px;
+        font-size: 18px;
+        border-radius: 30px;
+        text-decoration: none;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.35);
+        transition: 0.25s;
+    }
 
+    .back-btn:hover {
+        background: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.45);
+    }
 
-    </style>
+</style>
 </head>
 
 <body>
 
-    <div class="overlay">
+    <img src="../sources/logo.png" class="logo-circle" alt="Logo Pan Casero La 4TA">
 
-        <!-- Usa aquí tu logo PNG -->
-        <img src="../sources/logo.png" class="logo-circle" alt="Logo Pan Casero La 4TA">
+    <h1>Galletas para toda ocasión</h1>
+    <p class="sub">@pancaserola4ta_</p>
 
-        <h1>Galletas</h1>
-        <p class="sub">@pancaserola4ta_</p>
+    <div class="cards-container">
 
-        <div class="menu">
-            <a href="tortas.html" style="text-decoration:none;">
-                <div class="menu-item">Aqui estarn las galletas</div>
-            </a>
-            <div class="menu-item">Mas galletas</div>
-            <div class="menu-item">Muchas mas galletas</div>
-
-            <a href="../index.html" class="back-btn">⬅️ Volver al menú</a>
-        </div>
+        <!-- 14 tarjetas usando Gall_0.jpg hasta Gall_13.jpg -->
+        <div class="card"><img src="../sources/galletas/Gall_0.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_1.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_2.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_3.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_4.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_5.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_6.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_7.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_8.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_9.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_10.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_11.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_12.jpg"><div class="card-title">Galletas</div></div>
+        <div class="card"><img src="../sources/galletas/Gall_13.jpg"><div class="card-title">Galletas</div></div>
 
     </div>
+
+    <a class="back-btn" href="../index.html">⬅️ Volver al menú</a>
 
 </body>
 </html>
